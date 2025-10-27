@@ -1,8 +1,7 @@
-FROM python:latest
+FROM python:3.11-slim
 
 WORKDIR /app
 
-# Copy all files (including requirements.txt) into the container
 COPY . .
 
 RUN apt-get update -y && apt-get upgrade -y
